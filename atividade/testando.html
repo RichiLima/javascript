@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOM</title>
+    <title>praticando</title>
     <style>
-        #area {
+        #area{
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(47, 255, 47);
             color: #fff;
@@ -14,7 +14,7 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
-            font-size: 2em;
+            font-size: 3em;
         }
     </style>
 </head>
@@ -27,16 +27,15 @@
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
-        function clicar() {
-            a.innerText = ' Clicou !!'
-            a.style.backgroundColor = 'red'
+        function clicar() { a.innerText = 'Clicou!!'
+        a.style.backgroundColor = 'red'
         }
         function entrar() {
-            a.innerText = 'Entrou !!!'
+            a.innerText = 'Entrou!!!'
         }
         function sair() {
-            a.innerText = 'saiu !'
-            a.style.backgroundColor = 'rgb(47, 255, 47)'
+            a.innerText = 'saiu!'
+            a.style.backgroundColor = ' rgb(47, 255, 47)'
         }
     </script>
 </body>
