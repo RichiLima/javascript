@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sabendo sobre sua Nascionalidade</h1>
+    Onde Você Mora <input type="text" name="txtna" id="txtna">
+    <input type="button" value="pesquisar" onclick="pesquisar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function pesquisar() {
+            var txtn = window.document.getElementById('txtna')
+            var res = window.document.querySelector('div#res')
+            var na = txtna.value
+            res.innerHTML = `<p>O pais que você mora é <strong>${na}</strong></p>`
+            if (na == 'Brasil') {
+                res.innerHTML += `<p>Você é um Brasileiro que mora no Brasil!</p>`
+            } else {
+                res.innerHTML += `<p>Você é um Brasileiro que mora em outro País! por tanto você é um estrangeiro</p>`
+            }
+            
+              
+        }
+    </script>
+</body>
+</html>
